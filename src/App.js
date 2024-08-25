@@ -113,7 +113,7 @@ function App() {
           <ul className="w-56 md:w-[540px] text-white text-center items-center justify-center gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {result.map((pokemon, index) => (
               <div>
-                <li key={index} className='border rounded-lg flex gap-2 flex-col py-4 px-2 hover:bg-purple-600'>
+                <li key={index} className='border border-gray-500 rounded-lg flex gap-2 flex-col py-4 px-2 hover:bg-purple-600 bg-slate-700'>
                   <img src={pokemon.image} alt={pokemon.name} className='w-full h-24' />
                   <span>
                     {pokemon.name}</span>
