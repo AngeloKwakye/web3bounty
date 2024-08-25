@@ -35,9 +35,11 @@ Welcome to the Pokémon Marketplace, a decentralized application (dApp) that all
    git clone https://github.com/AngeloKwakye/web3bounty.git
    cd web3bounty
 2. Install dependencies:
-   ```npm install
+   ```bash
+   npm install
 3. Start the development server:
-    ```npm start
+   ```bash
+   npm start
 4. Open your browser and navigate to `http://localhost:3000` to start using the Pokémon Marketplace.
 
 ### Contributing
