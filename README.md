@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Pokémon Marketplace on Blockchain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to the Pokémon Marketplace, a decentralized application (dApp) that allows users to buy and collect Pokémon using blockchain technology. This project leverages Web3 and Chainlink to enable seamless cryptocurrency transactions. Users can browse through a collection of Pokémon and purchase them using various cryptocurrencies, including USD, BTC, and ETH. The real-time conversion rates are fetched using Chainlink's decentralized oracle network, ensuring transparency and accuracy in pricing.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. **Decentralized Pokémon Marketplace**
+   - **Explore and Buy**: Browse a wide variety of Pokémon available for purchase. Each Pokémon has a price listed in USD by default, which can be converted to other cryptocurrencies.
+   - **Real-time Conversion**: Prices are updated in real-time using Chainlink's price feeds, allowing users to see the exact cost of a Pokémon in their preferred cryptocurrency (USD, BTC, ETH).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Blockchain Integration**
+   - **Web3 and Ethereum**: The application is built on the Ethereum blockchain, ensuring all transactions are secure, transparent, and immutable.
+   - **Smart Contracts**: All transactions are handled via smart contracts, ensuring automated and trustless payments.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. **Chainlink Price Feeds**
+   - **Accurate Pricing**: Real-time cryptocurrency prices are fetched using Chainlink, ensuring that users always pay a fair and current market rate.
+   - **Multiple Currency Options**: Users can select from multiple currencies (USD, BTC, ETH) and see Pokémon prices updated instantly according to the latest rates.
 
-### `npm test`
+### 4. **Responsive and User-Friendly Interface**
+   - **Search and Filter**: Easily search and filter Pokémon by name, type, or price, making it simple to find your favorite Pokémon.
+   - **Dynamic Pricing**: The marketplace dynamically updates Pokémon prices based on the selected currency, providing a seamless and intuitive shopping experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
+- **Node.js** and **npm** or **yarn**: Ensure you have Node.js and npm installed on your machine.
+- **Ethereum Wallet**: You'll need an Ethereum wallet like MetaMask to interact with the dApp.
+- **Testnet ETH**: For testing purposes, ensure you have some testnet ETH in your wallet.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AngeloKwakye/web3bounty.git
+   cd web3bounty
+2. Install dependencies:
+   ```npm install
+3. Start the development server:
+    ```npm start
+4. Open your browser and navigate to `http://localhost:3000` to start using the Pokémon Marketplace.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
