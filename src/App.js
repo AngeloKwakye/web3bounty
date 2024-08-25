@@ -87,19 +87,18 @@ function App() {
 
   return (
     <>
-      <main className="w-full h-full pb-10 md:h-[100vh] flex flex-col gap-4 bg-black text-white">
-        <header className="w-full h-12 flex justify-between items-center border-b border-gray-200 px-2 md:px-10">
-          <img src='https://archives.bulbagarden.net/media/upload/d/d2/Pok%C3%A9mon_logo_English.png' alt='pokemon log' className='w-16 h-8' />
-          <select id="priceSelect" value={selectedOption.id} onChange={handleSelectChange} className='w-24 py-1 focus:outline-none rounded-md bg-gray-700 text-white'>
-            {options.map((option, index) => (
-              <option className='hover:bg-purple-600 p-2' key={index} value={option.id}>
-                {option.name.toUpperCase()}
-              </option>
-            ))}
-          </select>
-        </header>
-
-        <div className="flex flex-col gap-8 items-center justify-center mt-4">
+      <header className="w-full h-12 flex justify-between items-center border-b border-gray-600 px-2 md:px-10">
+        <img src='./assets/Pokémon_logo_English.png' alt='pokemon log' className='w-16 h-8' />
+        <select id="priceSelect" value={selectedOption.id} onChange={handleSelectChange} className='w-24 py-1 focus:outline-none rounded-md bg-gray-700 text-white'>
+          {options.map((option, index) => (
+            <option className='hover:bg-purple-600 p-2' key={index} value={option.id}>
+              {option.name.toUpperCase()}
+            </option>
+          ))}
+        </select>
+      </header>
+      <main className="w-full h-full md:h-[100vh-220px] flex flex-col gap-1 text-white my-1 bg-transparent">
+        <div className="flex flex-col gap-8 items-center justify-center ">
           <div className='flex flex-col gap-2 text-center'>
             <span className='text-xs md:text-xl font-mono'>Buy Pokémons</span>
             <input
@@ -107,29 +106,31 @@ function App() {
               placeholder="Search Pokémons..."
               value={query}
               onChange={handleSearch}
-              className="mb-4 py-2 px-7 rounded-full focus:outline-none bg-slate-700"
+              className="py-2 px-7 rounded-full focus:outline-none bg-slate-700"
             />
           </div>
           <ul className="w-44 md:w-[540px] text-white text-center items-center justify-center gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {result.map((pokemon, index) => (
               <div>
                 <li key={index} className='border border-gray-500 rounded-lg flex gap-2 flex-col py-4 px-2 hover:bg-purple-600 bg-slate-700'>
-                  <img src={pokemon.image} alt={pokemon.name} className='w-full h-24' />
-                 <div className='w-full justify-center items-center flex gap-2'>
-                 <span>{pokemon.name}</span>
-                 <button className='px-1 border border-gray-200 rounded-lg text-white hover:bg-slate-600'>buy</button>
-                 </div>
+                  <img src={pokemon.image} alt={pokemon.name} className='w-full h-24 bg-transparent' />
+                  <div className='w-full justify-center items-center flex gap-2 bg-transparent'>
+                    <span className='bg-transparent'>{pokemon.name}</span>
+                    <button className='px-1 border border-gray-200 rounded-lg text-white hover:bg-slate-600'>buy</button>
+                  </div>
                 </li>
                 <div className='flex gap-1 justify-center items-center'>
                   <span> {pokemon.convertedPrice}</span>
                   <span>{selectedOption.name.toUpperCase()}</span>
-
                 </div>
               </div>
             ))}
           </ul>
         </div>
       </main>
+      <footer className='w-full h-12 flex text-center items-center justify-center text-white'>
+        <span>made with ❤️ by <a href='https://github.com/AngeloKwakye/web3bounty' className='underline'>D'Angelo Kwakye</a></span>
+      </footer>
     </>
   );
 }
