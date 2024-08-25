@@ -110,14 +110,15 @@ function App() {
               className="mb-4 py-2 px-7 rounded-full focus:outline-none bg-slate-700"
             />
           </div>
-          <ul className="w-56 md:w-[540px] text-white text-center items-center justify-center gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="w-44 md:w-[540px] text-white text-center items-center justify-center gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {result.map((pokemon, index) => (
               <div>
                 <li key={index} className='border border-gray-500 rounded-lg flex gap-2 flex-col py-4 px-2 hover:bg-purple-600 bg-slate-700'>
                   <img src={pokemon.image} alt={pokemon.name} className='w-full h-24' />
-                  <span>
-                    {pokemon.name}</span>
-
+                 <div className='w-full justify-center items-center flex gap-2'>
+                 <span>{pokemon.name}</span>
+                 <button className='px-1 border border-gray-200 rounded-lg text-white hover:bg-slate-600'>buy</button>
+                 </div>
                 </li>
                 <div className='flex gap-1 justify-center items-center'>
                   <span> {pokemon.convertedPrice}</span>
