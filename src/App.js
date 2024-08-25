@@ -11,7 +11,7 @@ function App() {
   const [filteredPokemons, setFilteredPokemons] = useState(Pokemons);
 
   const options = [
-    { name: 'usd', id: 'UsdcUsd' },
+    { name: 'usdt', id: 'UsdcUsd' },
     { name: 'eth', id: 'EthUsd' },
     { name: 'bnb', id: 'BnbUsd' },
     { name: 'btc', id: 'BtcUsd' },
