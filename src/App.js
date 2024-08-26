@@ -97,7 +97,7 @@ function App() {
           ))}
         </select>
       </header>
-      <main className="w-full h-full md:h-[100vh-220px] flex flex-col gap-1 text-white my-1 bg-transparent">
+      <main className="w-full h-full md:h-[calc(100vh-110px)] flex flex-col gap-1 text-white my-1 bg-transparent">
         <div className="flex flex-col gap-8 items-center justify-center ">
           <div className='flex flex-col gap-2 text-center'>
             <span className='text-xs md:text-xl font-mono'>Buy Pokémons</span>
